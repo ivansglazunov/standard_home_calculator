@@ -13,7 +13,7 @@ const resources = {
       maxMonthRate: 'Ликвидно/мес',
       period: 'Длительность договора',
       beforeRepare: 'Подготовительный ремонт',
-      afterRepare: 'Чистка',
+      afterRepare: 'Чистка после',
       countTenants: 'Жильцов/договор',
       manualPercentage: 'Вручную установленный %',
       repairPeriodPrice: 'Ремонт/договор',
