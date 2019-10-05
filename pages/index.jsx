@@ -32,7 +32,7 @@ const Body = ({ children }) => {
 
 const defaultInput = {
   plainMonthPrice: 50000,
-  firstRepair: 0,
+  firstRepair: 150000,
   minPeriodCash: 300000,
   maxMonthRate: 50000,
   period: 24,
