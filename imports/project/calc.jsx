@@ -1,5 +1,6 @@
 import moment from 'moment';
 import { useState, createContext } from 'react';
+import _ from 'lodash';
 
 import { useUrlState } from '../packages/use-url-state';
 
@@ -68,7 +69,8 @@ export const calc = (s) => {
 export const CalcContext = createContext({});
 
 export function useCalcState(defaultState) {
-  return useUrlState('calc', defaultState);
+  const [state, setState] = useUrlState('calc', defaultState);
+  return [_.mapValues(state, v => +v), s => setState(_.mapValues(s, v => String(v)))];
 }
 
 export const CalcProvider = ({
