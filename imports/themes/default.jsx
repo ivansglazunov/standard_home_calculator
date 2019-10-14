@@ -18,5 +18,20 @@ export const defaultTheme = createMuiTheme({
         fontFamily,
       },
     },
+    MuiInputBase: {
+      input: {
+        padding: '3px 0',
+      },
+    },
+    MuiFormControl: {
+      root: {
+        marginTop: 10,
+        marginBottom: 10,
+      },
+      marginNormal: {
+        marginTop: 10,
+        marginBottom: 10,
+      },
+    },
   },
 });

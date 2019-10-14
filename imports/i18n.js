@@ -7,24 +7,6 @@ import 'moment/locale/ru';
 const resources = {
   ru: {
     translation: {
-      plainMonthPrice: 'Рента/мес',
-      firstRepair: 'Начальный ремонт',
-      minPeriodCash: 'Доход/договора',
-      maxMonthRate: 'Ликвидно/мес',
-      period: 'Длительность договора',
-      beforeRepare: 'Подготовительный ремонт',
-      afterRepare: 'Чистка',
-      countTenants: 'Жильцов/договор',
-      manualPercentage: 'Вручную установленный %',
-      repairPeriodPrice: 'Ремонт/договор',
-      repairMonthPrice: 'Ремонт/мес',
-      plainPeriodPrice: 'Рента/договор',
-      allPeriodPrice: 'Расходы/договор',
-      percentage: 'Процент',
-      cashPeriodPrice: 'Доход/договор',
-      cashMonthPrice: 'Доход/мес',
-      finalPeriodPrice: 'Цена/договор',
-      finalMonthPrice: 'Цена/мес',
     },
   },
 };
