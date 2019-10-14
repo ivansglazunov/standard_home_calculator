@@ -46,8 +46,8 @@ const resources = {
       partnersFixPeriod: 'фикс партнерам за договор',
       fundedLiveCashPeriod: 'оставшаяся сумма на развитие',
 
+      calculatorForPartner: 'калькулятор для партнера',
       fromMeasurer: 'устанавливает замерщик',
-
       partsCash: 'доли прибыли',
       totalSum: 'доли оборота',
     },
