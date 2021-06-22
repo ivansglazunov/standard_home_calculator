@@ -1,5 +1,6 @@
 import moment from 'moment';
 import { useState, createContext } from 'react';
+import { QueryStoreProvider, useQueryStore } from '@deepcase/store/query';
 import _ from 'lodash';
 
 import { useUrlState } from '../packages/use-url-state';
@@ -69,8 +70,7 @@ export const calc = (s) => {
 export const CalcContext = createContext({});
 
 export function useCalcState(defaultState) {
-  const [state, setState] = useUrlState('calc', defaultState);
-  return [_.mapValues(state, v => +v), s => setState(_.mapValues(s, v => String(v)))];
+  return useQueryStore('calc', defaultState);
 }
 
 export const CalcProvider = ({

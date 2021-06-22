@@ -448,7 +448,7 @@ const Form = ({
   );
 };
 
-export default () => {
+export default wrapPage(() => {
   return (
     <>
       <MuiPickersUtilsProvider utils={MomentUtils}>
@@ -458,4 +458,4 @@ export default () => {
       </MuiPickersUtilsProvider>
     </>
   );
-};
+});

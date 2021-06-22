@@ -1,5 +1,6 @@
 import { AnaliticsProvider } from './packages/analitics';
 import { defaultTheme } from './themes/default';
+import { QueryStoreProvider, useQueryStore } from '@deepcase/store/query';
 
 import 'normalize.css';
 import { ThemeProvider } from '@material-ui/styles';
@@ -7,7 +8,7 @@ import { SnackbarProvider, useSnackbar } from 'notistack';
 
 export const wrapPage = Component => {
   return () => {
-    return (
+    return (<QueryStoreProvider>
       <ThemeProvider theme={defaultTheme}>
         <SnackbarProvider maxSnack={3}>
           <AnaliticsProvider 
@@ -19,6 +20,6 @@ export const wrapPage = Component => {
           </AnaliticsProvider>
         </SnackbarProvider>
       </ThemeProvider>
-    );
+    </QueryStoreProvider>);
   };
 };
