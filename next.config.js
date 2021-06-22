@@ -40,6 +40,6 @@ module.exports = withPlugins(
       return config;
     },
     basePath: process.env.NODE_ENV === 'production' ? `/${repository}` : '',
-    assetPrefix: process.env.NODE_ENV === 'production' ? `https://cdn.statically.io/gh/ivansglazunov/${repository}/c7399440/docs/` : '',
+    assetPrefix: process.env.NODE_ENV === 'production' ? `https://cdn.statically.io/gh/ivansglazunov/${repository}/e287ccfb/docs/` : '',
   },
 );
