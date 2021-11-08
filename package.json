@@ -28,7 +28,7 @@
     "date-fns": "^2.4.1",
     "dotenv": "^8.1.0",
     "dotenv-webpack": "^1.7.0",
-    "graphiql": "^0.14.2",
+    "graphiql": "^1.4.7",
     "graphiql-explorer": "^0.4.4",
     "graphql": "^14.5.7",
     "graphql-tag": "2.10.1",
